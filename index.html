@@ -1,0 +1,281 @@
+<!-- Last updated - Tony Waddington, 7/3/17 14.00 -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Interpreting body language</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Paste this css to your style sheet file or under head tag */
+        /* This only works with JavaScript,
+        if it's not present, don't show loader */
+        
+        .no-js #loader {
+            display: none;
+        }
+        
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+        
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999999999999999;
+            background: url(img/Preloader_3.gif) center no-repeat #fff;
+        }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/HOR302-fungi.css" rel="stylesheet">
+    <script>
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="intro-page">
+        <div class="modal">
+            <h1>Interpreting body language</h1>
+            <p>Drag the correct interpretation to the to the body language underneath.</p>
+            <div class="btn">Got it</div>
+        </div>
+
+
+    </div>
+
+
+    <div id="question-page">
+        <!-- Draggable answers -->
+        <header>
+            <p>Interpreting body language</p> <i class="fa fa-question-circle" aria-hidden="true"></i></header>
+
+        <div class="tooltip">
+            <img src="img/tooltipPointer.png"> Drag the correct interpretation to the to the body language bellow.
+        </div>
+
+        <div class="menu">
+
+            <h1 id="0-question" class="question-number"><strong>Q1/7.</strong> </h1>
+            <h1 id="1-question" class="question-number"><strong>Q2/7.</strong> </h1>
+            <h1 id="2-question" class="question-number"><strong>Q3/7.</strong> </h1>
+            <h1 id="3-question" class="question-number"><strong>Q4/7.</strong> </h1>
+            <h1 id="4-question" class="question-number"><strong>Q5/7.</strong> </h1>
+            <h1 id="5-question" class="question-number"><strong>Q6/7.</strong> </h1>
+            <h1 id="6-question" class="question-number"><strong>Q7/7.</strong> </h1>
+
+
+            <!-- 3 -->
+            <div class="answer hvr-grow one-line">
+                <p>Rheumatoid arthritis</p>
+            </div>
+            <!-- 6 -->
+            <div class="answer hvr-grow one-line">
+                <p>Anticipation, excited</p>
+            </div>
+            <!-- 2 -->
+            <div class="answer hvr-grow one-line">
+                <p>Chron's desease</p>
+            </div>
+            <!-- 5 -->
+            <div class="answer hvr-grow one-line">
+                <p>Insecurity, nervousness</p>
+            </div>
+            <!-- 1 -->
+            <div class="answer hvr-grow one-line">
+                <p>Graves' desease</p>
+            </div>
+            <!-- 7 -->
+            <div class="answer hvr-grow one-line">
+                <p>Sincerity, openness</p>
+            </div>
+            <!-- 4 -->
+            <div class="answer hvr-grow one-line">
+                <p>Impatience, concentrating</p>
+            </div>
+        </div>
+
+        <div class="images">
+            <img src="img/thyroid.png" class="active" id="0-image">
+            <img src="img/gastro.svg" id="1-image">
+            <img src="img/walk.svg" id="2-image">
+            <img src="img/impatience.svg" id="3-image">
+            <img src="img/nail-biting.svg" id="4-image">
+            <img src="img/rubbing-hands.svg" id="5-image">
+            <img src="img/open-palm.svg" id="6-image">
+        </div>
+
+        <!-- DROP AREA-->
+
+        <div class="wrapper">
+
+
+            <div class="question-container" id="0-question-container">
+                <p class="question">Thyroid gland:</p>
+                <div class="drop allowed one-line" id="one-drop">
+                    <p>Graves' desease</p>
+                </div>
+            </div>
+
+            <div class="question-container" id="1-question-container">
+                <p class="question">Gastrointestinal desease:</p>
+                <div class="drop allowed" id="two-drop">
+                    <p>Chron's desease</p>
+                </div>
+            </div>
+
+            <div class="question-container" id="2-question-container">
+                <p class="question">Joints and surrounding tissues:</p>
+                <div class="drop allowed one-line" id="three-drop">
+                    <p>Rheumatoid arthritis</p>
+                </div>
+            </div>
+
+            <div class="question-container" id="3-question-container">
+                <p class="question">Outer covering of nerve cells (myelin sheath) in the brain and spinal cord:</p>
+                <div class="drop allowed one-line" id="four-drop">
+                    <p>Multiple sclerosis</p>
+                </div>
+            </div>
+
+            <div class="question-container" id="4-question-container">
+                <p class="question">Biting nails:</p>
+                <div class="drop allowed one-line" id="five-drop">
+                    <p>Insecurity, nervousness</p>
+                </div>
+            </div>
+
+            <div class="question-container" id="5-question-container">
+                <p class="question">Rubbing hands:</p>
+                <div class="drop allowed one-line" id="six-drop">
+                    <p>Anticipation, excited</p>
+                </div>
+            </div>
+
+            <div class="question-container" id="6-question-container">
+                <p class="question">Open palm:</p>
+                <div class="drop allowed one-line" id="seven-drop">
+                    <p>Sincerity, openness</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <a class="btn nextbtn">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+
+
+
+        </div>
+    </div>
+
+    <!-- Page to appear when completed -->
+    <div id="complete-page">
+        <div class="content">
+
+            <p><i class="fa fa-check-circle-o endTick" aria-hidden="true"></i> <strong>Well done!</strong></p>
+
+            <table cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th>Type of body language</th>
+                        <th>Interpretation</th>
+                    </tr>
+                    <tr>
+                        <td>Brisk, upright walk</td>
+                        <td>Rheumatoid arthritis</td>
+                    </tr>
+                    <tr>
+                        <td>Rubbing hands</td>
+                        <td>Anticipation, excited</td>
+                    </tr>
+                    <tr>
+                        <td>Sitting with hands clasped behind head, legs crossed</td>
+                        <td>Gastrointestinal deseased</td>
+                    </tr>
+                    <tr>
+                        <td>Biting nails</td>
+                        <td>Insecurity, nervousness</td>
+                    </tr>
+                    <tr>
+                        <td>Looking down, face turned away</td>
+                        <td>Graves' desease</td>
+                    </tr>
+                    <tr>
+                        <td>Open palm</td>
+                        <td>Sincerity, openness</td>
+                    </tr>
+                    <tr>
+                        <td>Tapping or drumming fingers</td>
+                        <td>Impatience, concentrating</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <div class="btn restart-button">Restart <i class="fa fa-undo" aria-hidden="true"></i></div>
+        </div>
+    </div>
+
+    <div>
+        <div id="answered-correctly" class="hidden">
+            <i class="fa fa-check" aria-hidden="true"></i>
+        </div>
+        <div id="answered-wrongly" class="hidden">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <!--  Modal scripts  -->
+
+
+    <!-- Google Analytic -->
+    <script src="js/fungi.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-85015012-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
